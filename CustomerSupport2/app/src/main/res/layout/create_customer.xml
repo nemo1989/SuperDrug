@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="center_horizontal|bottom|left|right|top">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/forename"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:id="@+id/forename"
+                android:imeOptions="flagNoExtractUi"
+                android:autoText="false"
+
+                android:drawableTint="#ee0d0d"
+                android:outlineProvider="paddedBounds"
+                android:editable="false"
+                android:typeface="normal"
+                android:textStyle="normal"
+                android:background="@drawable/border"
+                 />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/surname"/>
+
+            <EditText
+                android:layout_width="1dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:id="@+id/surname"
+                android:imeOptions="flagNoExtractUi"
+                android:background="@drawable/border"
+ />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/contact_number"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="phone"
+                android:background="@drawable/border" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/email"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:imeOptions="actionSend|flagNoExtractUi"
+                android:imeActionLabel="@string/email"
+                android:background="@drawable/border"
+                android:layout_column="22" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/dob"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:id="@+id/dob"
+                android:inputType="date"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:background="@drawable/border"
+                android:layout_column="22" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/date"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:inputType="date"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:background="@drawable/border"
+                android:layout_column="22" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
+
